@@ -33,8 +33,8 @@ Sub KirimPesanTelegram(ByRef Pesan As String)
     Dim Token As String, ChatID As String
     Dim sURL As String, oHttp As Object, sHTML As String
     
-    Token = "2045384010:AAGz5wOA-oPPFP6gZNKKYr77sNxKmjdj_TY" 'Token Bot dari @BotFather
-    ChatID = "1561422796" 'ID User Telegram yang ingin di kirim pesan
+Token = "yourToken" 'Token Bot dari @BotFather
+ChatID = "YourChatID" 'ID User Telegram yang ingin di kirim pesan
     sURL = "https://api.telegram.org/bot" & Token & "/sendMessage?chat_id=" & ChatID & "&text=" & Pesan
     
     Set oHttp = CreateObject("Msxml2.XMLHTTP")
